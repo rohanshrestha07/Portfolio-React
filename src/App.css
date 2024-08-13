@@ -1,1 +1,46 @@
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit-based browsers */
+}
 
+
+/* service page animations */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0 55px;
+    gap: 30px;
+}
+
+.service-item {
+    background: transparent;
+    border: 2px solid #D3AF85;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0px 15px rgba(244, 179, 21, 0.7);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #F4B315;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #666;
+}

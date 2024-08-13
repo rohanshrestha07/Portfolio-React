@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function SocialIcons() {
     return (
-        <div className="absolute flex flex-col w-16 h-56 p-5 right-0 my-64 rounded-s-3xl drop-shadow-2xl border-l-2 bg-[#F4B315] bg-transparent ">
+        <div className="fixed flex flex-col w-16 h-56 p-5 right-0 my-64 rounded-s-3xl drop-shadow-2xl border-l-2 border-[#D3AF85] bg-[#F4B315] bg-transparent ">
             <LinkedInIcon
                 style={{
                     marginTop: '0px',
