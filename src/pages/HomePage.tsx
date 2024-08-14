@@ -12,6 +12,8 @@ import BeeImg from '../components/bee/BeeImg';
 import BeeImg2 from '../components/bee/BeeImg2';
 
 export default function HomePage() {
+    const pdfUrl = "/src/pdf/cv.pdf"; // Replace with your PDF file path
+
     useEffect(() => {
         AOS.init({
           offset: 200,        // offset (in px) from the original trigger point
@@ -46,6 +48,7 @@ export default function HomePage() {
                         }}
                         >Explore work</button>
                     </Link>
+                    <a href={pdfUrl} download="cv.pdf">
                     <button className="custom-cursor px-3 py-2 rounded-3xl border-2 border-[#D3AF85] transition-all"
                         style={{
                             boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)'
@@ -58,6 +61,7 @@ export default function HomePage() {
                         }}>Download CV
                         <DownloadIcon/>
                         </button>
+                    </a>
                 </div>
             </div>
         </div>
